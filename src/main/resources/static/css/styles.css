@@ -1,0 +1,86 @@
+:root{
+    /* COMPONENTE: VARIABLES CSS */
+    --color-primario: #EC111A;
+    --color-segundario: #007BDF;
+    --color-terciario: #000;
+    --color-sombras: #282d31;
+    --color-parrafos: #53575a;
+    --color-titulos: #282d31;
+    --color-fondo: #fafafa;
+}
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right, skyblue,blue);
+}
+
+/*INICIO DEL FORMULARIO*/
+form{
+    background-color: #FFF;
+    box-shadow: 0 0 4px var(--sombras); /*DESPLAZAMIENTO HORIZONTAL, DESPLAZAMIENTO VERTICAL, DIFUMINADO, COLOR*/
+    max-width: 500px;
+    border-radius: .8em; /*BORDEA*/
+    margin: 6em auto; /*MARGI SUPERIOR E INFERIOR, MARGIN IZQUIERO Y DERECHO*/
+}
+
+.loginfm h1{
+    background-color: rgb(38, 145, 233);
+    font-weight: bold;
+    text-align: center;
+    padding: .8em 0 1em ;
+    border-radius: 12px 12px 0px 0px;
+    font-size: 2em;
+    color: #fff;
+}
+
+.logins{
+    border: rgb(27, 27, 27) solid px;
+    border-radius: 16px;
+    
+}
+h2{
+    padding: .5em 0 0;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: .4em;
+    font-size: 1.8em;
+}
+input{
+    width: 90%;
+    border: none;
+    border: 1.6px solid var(--color-secundario); /*GROSOR, TIPO, COLOR*/
+    padding: .5em;
+    margin-left: 1.7em;
+    margin-bottom: .8em;
+    border-radius: .5em;
+}
+#boton{
+    background-color: rgb(21, 86, 172);
+    border: var(--color-terciario);
+    color: #FFF;
+    padding: .9em;
+    font-weight: bold;
+    margin-top: 1.3em;
+    transition: all .3s ease-in-out;
+}
+#boton:hover{
+    background-color: var(--color-parrafos);
+    color: #FFF;
+}
+#terminos{
+    width: 1em;
+}
+.letra1{
+    font-weight: bold;
+    margin-left: 49px;
+    color: var(--color-terciario);
+}
+.letra2{
+    font-weight: bold;
+    color: var(--color-terciario);
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.thymeleaf.org">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- boostrap -->
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+    <title>Notarialogin</title>
+</head>
+<body>
+    <article class="conteiner login">
+        <form action="/Notaria/validar" method="post" class="loginfm">
+            <section class="col-xs-12 col-sm-12 col-md-12 logins">
+
+                <h1>LOGIN</h1>
+                <h2></h2>
+
+                <input type="text" id="nombres" name="nombres" placeholder="Nombres">
+
+                <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos">
+
+                <input type="email" id="email" name="email" placeholder="Correo electronico">
+
+                <input type="cel" id="celular" name="celular" placeholder="Teléfono / celular">
+
+                <input type="checkbox" name="terminos" id="terminos">
+                <label>Acepto haber leido las</label>
+                <a href="#" class="letra2">políticas de privacidad</a>
+                <label>y los</label>
+                <a href="#" class="letra1">términos y condiciones.</a>
+
+                <input type="submit" id="boton" value="Solicitar">
+
+            </section>
+
+        </form>
+    </article>
+</body>
+</html>
